@@ -6,6 +6,7 @@
 .SeccionLanding{
     height: 100vh;
     display: flex;
+    font-size: 10px;
 
     
 }
@@ -15,6 +16,7 @@
     flex: 1;
     padding: 1.5em;
     gap: 1.5em;
+    align-items: center;
 }
 
 .contenedorCaja{
@@ -32,5 +34,17 @@
 
 .contenedorCaja__caja{
     flex: 1;
-    background-color: orange;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+    
+    
+}
+
+.caja__img{
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+    
 }
