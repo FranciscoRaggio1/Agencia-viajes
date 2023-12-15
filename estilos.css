@@ -17,6 +17,7 @@
   gap: 1.5em;
   align-items: center;
   justify-content: center;
+  font-family: poppins;
 }
 
 .contenedorCaja {
@@ -82,12 +83,57 @@
     opacity: 0;
   }
 }
-#idRa {
-  animation: letrero 3s 1s forwards;
+#idHo {
+  position: absolute;
 }
 
-@keyframes letrero {
-  100% {
-    translate: 30px;
-  }
+#idRa {
+  position: absolute;
+  top: 150px;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: yellow;
+  font-size: 10px;
+  display: flex;
+  border-radius: 15px;
+  margin-top: 7em;
+}
+
+.footer__carrusel {
+  flex: 6;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carrusel__img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__botonera {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  font-size: 1em;
+  justify-content: center;
+  flex-direction: column;
+  flex: 4;
+  font-family: poppins;
+}
+
+.botonera__boton {
+  background-color: aliceblue;
+  width: 70%;
+  border-radius: 15px;
+  padding: 2em;
+  font-size: 10px;
+}
+
+.botonera__boton h4 {
+  font-size: 2em;
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */
