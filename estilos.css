@@ -54,22 +54,23 @@
   color: white;
   opacity: 0;
   width: 100%;
+  animation: escalinata 2s 20s infinite;
 }
 
 #caja1 {
-  animation: escalinata 3s 2s;
+  animation: escalinata 3s 2s, escalinata 2s 20s infinite;
 }
 
 #caja2 {
-  animation: escalinata 3s 5s;
+  animation: escalinata 3s 5s, escalinata 2s 20s infinite;
 }
 
 #caja3 {
-  animation: escalinata 3s 8s;
+  animation: escalinata 3s 8s, escalinata 2s 20s infinite;
 }
 
 #caja4 {
-  animation: escalinata 3s 11s;
+  animation: escalinata 3s 11s, escalinata 2s 20s infinite;
 }
 
 @keyframes escalinata {
@@ -83,15 +84,6 @@
     opacity: 0;
   }
 }
-#idHo {
-  position: absolute;
-}
-
-#idRa {
-  position: absolute;
-  top: 150px;
-}
-
 .footer {
   width: 100%;
   height: 300px;
@@ -108,13 +100,20 @@
   overflow: hidden;
   border-radius: 15px;
 }
+@media (max-width: 767.98px) {
+  .footer__carrusel {
+    overflow-x: scroll;
+  }
+}
 
 .carrusel__img {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.carrusel__img--primera {
   animation: desplazamientoCarrusel 30s infinite;
 }
 
@@ -160,4 +159,13 @@
 .botonera__boton h4 {
   font-size: 2em;
   text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: yellow; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
 }/*# sourceMappingURL=estilos.css.map */
