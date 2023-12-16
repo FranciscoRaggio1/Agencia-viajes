@@ -45,6 +45,7 @@ $tipografia: poppins;
   z-index: -1;
 }
 
+
 .caja__texto {
   background-color: rgba(0, 0, 0, 0.753);
   height: 100%;
@@ -57,16 +58,16 @@ $tipografia: poppins;
   animation: escalinata 2s 20s infinite;
 }
 #caja1 {
-  animation: escalinata 3s 2s, escalinata 2s 20s infinite;
+  animation: escalinata 3s 2s, escalinata 2s 20s 3;
 }
 #caja2 {
-  animation: escalinata 3s 5s, escalinata 2s 20s infinite;
+  animation: escalinata 3s 5s, escalinata 2s 20s 3;
 }
 #caja3 {
-  animation: escalinata 3s 8s, escalinata 2s 20s infinite;
+  animation: escalinata 3s 8s, escalinata 2s 20s 3;
 }
 #caja4 {
-  animation: escalinata 3s 11s, escalinata 2s 20s infinite;
+  animation: escalinata 3s 11s, escalinata 2s 20s 3;
 }
 
 @keyframes escalinata {
@@ -154,7 +155,9 @@ $tipografia: poppins;
   border-radius: 15px;
   padding: 2em;
   font-size: 10px;
+  cursor: pointer;
 }
+
 .botonera__boton h4 {
   font-size: 2em;
   text-align: center;
