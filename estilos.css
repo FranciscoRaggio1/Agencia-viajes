@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -84,10 +85,37 @@
     opacity: 0;
   }
 }
+.Columna__contenedorCartel {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorCartel__filaCartel {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.filaCartel__cartel {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  padding: 3em;
+}
+
+.cartel__texto {
+  font-size: 3em;
+}
+
 .footer {
   width: 100%;
   height: 300px;
-  background-color: yellow;
+  background-color: #ffff00;
   font-size: 10px;
   display: flex;
   border-radius: 15px;
@@ -162,11 +190,50 @@
   text-align: center;
 }
 
+.seccionNoticias {
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  background-image: url(img/Montañas1.svg);
+  background-size: cover;
+}
+
+.seccionNoticias__contenedorNoticia {
+  flex: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorNoticia__bloque {
+  width: 50%;
+  height: 80%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 0, 0.2470588235);
+}
+
+.seccionNoticias__seleccionador {
+  flex: 2;
+  background-color: rgba(255, 255, 0, 0.2470588235);
+  border-radius: 15px;
+  display: flex;
+}
+
+.seleccionador__boton {
+  flex: 1;
+}
+
+#boton1 {
+  background-image: url(https://cdn.pixabay.com/photo/2020/02/27/20/48/aircraft-4885805_1280.jpg);
+  background-size: cover;
+}
+
 body::-webkit-scrollbar {
   width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: yellow; /* color of the scroll thumb */
+  background-color: #ffff00; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
 }/*# sourceMappingURL=estilos.css.map */
